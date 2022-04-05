@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 1em;
+}
+.pai {
+    height: 100vh;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+}
+.pai > *{
+    padding: 1.7rem;
+}
+.cab {
+    background-color: rgba(0, 0, 255, 0.431);
+}
+.centro {
+    background-color: rgba(255, 0, 0, 0.465);
+}
+.centro2 {
+    background-color: rgba(185, 206, 3, 0.835);
+}
+.centro3 {
+    background-color: rgb(4, 255, 242);
+}
+.centro4 {
+    background-color: rgba(211, 7, 200, 0.534);
+} 
+.pe {
+    background-color: rgba(0, 0, 255, 0.431);
+}
+h2:hover {
+    font-size: 2.0rem;
+}
+h2:active {
+    color: blue;
+}
+.cen{
+    margin: 20px;
+}
+header{
+    order: -1;
+}
+.centro{
+    order: 0;
+}
+.centro2{
+    order: 3;
+}
+.centro3{
+    order: 1;
+}
+.centro4{
+    order: 2;
+}
+footer {
+order: 4;
+}
+/*
+#bloco01, #bloco02, #bloco03 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    font: bold 2em/8 sans-serif;
+    text-align: center;
+    color: #FFF;
+}
+#bloco01 {
+    background: red;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+#bloco02 {
+    background: blue;
+    left: 30px;
+    top: 150px;
+    z-index: 2;
+}
+#bloco03 {
+    background: green;
+    left: 60px;
+    top: 300px;
+    z-index: 1;
+}
+*/
+    header, footer {
+        flex: 1 0 100%;
+    }
+    .centro, .centro2, .centro3, .centro4{
+    flex:1 0 22%;
+    }

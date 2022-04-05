@@ -1,0 +1,12 @@
+header,main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    width: 80px;
+    border: none;
+    border: solid 1px black;
+    border-radius: 5px;
+    cursor: pointer;
+}

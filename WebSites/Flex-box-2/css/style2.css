@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 64px;
+    color: #000000;
+}
+.pai{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    background: #A6B9FF;
+}
+aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex:1 0 16%;
+    background: #FFF598;
+}
+article{
+    flex: 1 0 70%;
+    background: #FFCBCB;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: center;
+    
+}
+.barticle{
+    height: 100px;
+}
+b{
+    width: 100%;
+}
+aside, article{
+    padding: 90px;
+    margin: 50px;
+    
+}
+img{
+    margin: 0px 20px;
+    width: 230px;
+    height: 210px;
+}
+
+footer{
+    background: #A6B9FF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header, footer {
+    flex: 1 0 100%;
+}
+
+/*    header, footer {
+        flex: 1 0 100%;
+    }
+    .centro, .centro2, .centro3, .centro4{
+    flex:1 0 22%;
+    }*/
+    @media screen and (max-width: 1359px) {
+        article{
+            flex: 1 0 40%;
+        }    
+        aside, article{
+            padding: 50px;
+            margin: 20px;
+            
+        }
+
+    }
+    @media screen and (max-width: 1777px) {
+        article{
+            flex: 1 0 20%;
+            
+        } 
+        img{
+            margin: 10px;
+            order: 1;
+        }
+        aside{
+            flex: 0 0 10%;
+        }
+
+    }

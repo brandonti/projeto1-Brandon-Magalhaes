@@ -1,0 +1,82 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 2</title>
+    <link rel="stylesheet" href="css/style-4.css">
+</head>
+<body>
+    <div class="central">
+        <form action="">
+            <fieldset class="fildcab">
+                <legend class="legendcab"><b>Formulário de Desenvolvedor Web</b></legend>
+                <br>
+                <div class="grupo">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label class="labelInput" for="nome"><b>Nome</b></label>
+                </div>
+                <br>
+                <div class="grupo">
+                    <input type="text" name="sobrenome" id="sobrenome" class="inputUser" required>
+                    <label class="labelInput" for="sobrenome"><b>Sobrenome</b></label>
+                </div>
+                <br>
+                <div class="grupo">
+                    <input type="text" name="login" id="login" class="inputUser" required>
+                    <label class="labelInput" for="login"><b>Login</b></label>
+                </div>
+                <br>
+                <div class="grupo">
+                    <input type="password" name="senha" id="senha" class="inputUser" required>
+                    <label class="labelInput" for="senha"><b>Senha</b></label>
+                </div>
+                <br>
+                <div class="grupo">
+                    <input type="email" name="email" id="email" class="inputUser" required>
+                    <label class="labelInput" for="email"><b>Email</b></label>
+                </div>
+                <br><br>
+                <div class="datta">
+                    <label for="data"><b>Data de Nascimento:</b></label>
+                    <input type="date" name="data" id="data"  required>
+                </div>
+                <br><br>
+                <div class="grupo">
+                    
+                    <label for="dev"><b>Digite sua função:</b></label>
+                <select name="dev" id="devlop">
+                    <option selected disabled><b>Selecione</b></option>
+                    <option><b>Front End</b></option>
+                    <option><b>Back End</b></option>
+                    <option><b>FullStack</b></option>
+                </select>
+                </div>
+                <br><br>
+                <div class="grupo">
+                <label for="trab"><b>Já Trabalhou com Desenvolvimento Web:</b></label>
+            </div>
+                <br>
+                <div class="grupo">
+                    <input type="radio" name="trab" id="nunca">
+                    <label for="nunca"><b>Nunca</b></label>
+                    <input type="radio" name="trab" id="um">
+                    <label for="um"><b>1 Ano</b></label>
+                    <input type="radio" name="trab" id="doiscinco">
+                    <label for="doiscinco"><b>2 a 5 Anos</b></label>
+                    <input type="radio" name="trab" id="cincomais">
+                    <label for="cincomais"><b>5 ou Mais</b></label>
+                </div>
+                <br><br>
+                <div class="grupo">
+                <fieldset class="fildtext"><legend class="legendtext"><b>Digite algo Sobre você:</b></legend>
+                <textarea name="area" id="area" cols="30" rows="5"></textarea>
+            </fieldset>
+                </div>
+                <br>
+                
+                <input type="submit" name="submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>

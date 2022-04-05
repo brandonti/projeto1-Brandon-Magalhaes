@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Layout Básico</title>
+        <meta charset="UTF-8">     
+        <style type="text/css" media="screen">
+            *{
+                padding: 0;
+                margin: 0;
+                border: 0;
+                box-sizing: border-box;
+            }
+            .wrapper {
+                color: white;
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+            }
+            .wrapper > * {
+                padding:2.5rem;
+            }
+            header, footer {
+                background-color: lightskyblue;
+            }
+            .nav {
+                background-color: royalblue;
+                order: 1;
+            }
+            article {
+                background-color: tomato;
+            }
+            .banner {
+                background-color: seagreen;
+                order: 1;
+            }
+            footer {
+                order: 1;
+            }
+            @media screen and (min-width: 1024px){
+                .wrapper {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+                header, footer {
+                    flex: 1 0 100%;/*fator de crescimento 1,encolhimento 0, ficar com 100% da area*/
+                }
+            .nav , .banner{
+                order: 0;
+                flex:1 0 20%; /*fator de crescimento 1,encolhimento 0, ficar com 20% da area*/
+            }
+            article {
+                flex: 1 0 60%;
+            }
+        }
+
+        </style>                                                                                                                                                                                                                                                                   
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                Cabeçalho
+            </header>
+
+            <aside class="nav">
+                Categorias,posts, recentes, entre outros
+            </aside>
+
+            <article class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat odio nisl, sodales vehicula diam sodales 
+                sit amet. Aliquam eu aliquet libero. Sed dapibus dictum est, non vestibulum mauris ultrices sed. Etiam tristique 
+                lectus vel finibus sollicitudin. Aenean velit augue, fringilla non consequat at, feugiat et metus. Ut egestas dolor
+                 massa, ut luctus metus aliquam eu. Nunc elementum, odio mattis porta porta, nisl libero maximus ex, vel mollis ex
+                  odio posuere tortor. Fusce nec fermentum tellus. Aliquam tempor, odio vel rutrum volutpat, arcu lacus volutpat 
+                  ante, vitae feugiat nisl dolor ut nisi. Nunc eu efficitur dui.
+
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat odio nisl, sodales vehicula diam sodales 
+                  sit amet. Aliquam eu aliquet libero. Sed dapibus dictum est, non vestibulum mauris ultrices sed. Etiam tristique 
+                  lectus vel finibus sollicitudin. Aenean velit augue, fringilla non consequat at, feugiat et metus. Ut egestas dolor
+                   massa, ut luctus metus aliquam eu. Nunc elementum, odio mattis porta porta, nisl libero maximus ex, vel mollis ex
+                    odio posuere tortor. Fusce nec fermentum tellus. Aliquam tempor, odio vel rutrum volutpat, arcu lacus volutpat 
+                    ante, vitae feugiat nisl dolor ut nisi. Nunc eu efficitur dui.
+            </article>
+
+            <aside class="banner">
+                área para publicidade
+            </aside>
+
+            <footer>
+                Rodapé
+            </footer>
+           
+        </div>
+    </body>
+</html>

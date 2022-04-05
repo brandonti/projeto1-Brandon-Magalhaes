@@ -1,0 +1,61 @@
+body{
+    padding: 30px;
+}
+.container {
+    display: flex;
+	background-color: #85d0bc;				
+	border: 1px solid #028082;
+	width:500px;
+	height: 400px;
+	margin: 0 auto;
+	color: #028082;
+/*flex-direction:row;  flex-wrap: wrap;*/
+
+/*Padrao = display: flex; flex-direction: row; flex-wrap: wrap;
+justify-content serve para manipular a posicao dos elementos filhos linha flex-start, center flex-end ou coluna
+em cima no meio e em baixo. justify-content: flex-end ou start; ou space-between é o espaço entre os itens.
+space-around é em volta deles (no flex-direction: row; ele deixa o flex-end a direita e no column em baixo)*/
+/* align-items Só funciona se o flex-wrap estiver nowrap, serve para manipular a posicao
+ dos elementos em coluna   stretch?  baseline?, flex-start... 
+ leva pro inicio meio e final, se for em column se inverte igual a cima.*/
+/*align-content faz a mesma coisa que o align-items a diferença é que esse nao precisar ter nowrap
+space-around ou between*/
+/*display: block; faz com que todos os elementos fiquem em formato de blocos.
+display: flex; faz com que os elementos filhos fiquem em formato de linha, e o pai nao.
+display: inline-block; faz com que o elemento pai fique em linha e o filho em bloco.
+display: inline-flex; faz com que o elemento pai e filho fiquem em linha. 
+flex-direction: row; que é o valor linha (padrao), column e tem os 2 com reverse*/
+/*flex-wrap: wrap; = os elementos filhos vao encher o espaço disponivel pelo elemento pai. e tem wrap-reverse
+flex-wrap: wrap; = faz com que assuma a largura original ignorante o espaco do elemento pai*/
+ /*.item:nth-child(2){ seleciona o 2
+ flex-grow: 2; aumenta em 2 o fator de crescimento
+ flex-shrink:2; fator de encolhimento
+ flex-basis: 100px; = width e height, auto tbm
+ flex: flex-grow flex-shrink flex-basis; a ordem flex: 0 1 auto;*/
+ /*flex: auto; = flex-basis auto, flex: 2; = flex: 1 1 0;*/
+ /*Order o nome ja diz coloca em ordem, order: 1;*/
+ /**align-self: (flex-start, flex-end, center...); serve para mapear uma determinada div ou item especifica*/
+}	
+.item {
+    background-color: #cdf6eb;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+}
+.item:nth-child(even) {
+    background-color: #a4ddce;
+}
+.item-04 {
+    order: -2;
+}
+.item-03 {
+    order: -1;
+}
+.item-02 {
+    order: 0;
+}
+.item-01 {
+    order: 1;
+}

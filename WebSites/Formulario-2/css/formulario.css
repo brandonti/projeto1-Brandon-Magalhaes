@@ -1,0 +1,131 @@
+
+/*CSS SEM ORGANIZAÇÃO*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    
+    background-color: rgb(176, 176, 255);
+    font-family: sans-serif;
+    color: rgb(39, 39, 122);
+    font-size: 1em;
+    margin-left: 35%;
+    margin-top: 3%;
+    justify-content: center;
+}
+#titulo {
+    color: rgb(8, 8, 126);
+    font-family: sans-serif;
+}
+#subtitulo {
+    color: rgb(7, 7, 134);
+    font-family: sans-serif;
+}
+#titu h1{
+    margin-left: -55px;
+    margin-bottom: 10px;
+}
+#titu h3 {
+    margin-left: 110px;
+    margin-bottom: 7px;
+    margin-top: 10px;
+}
+fieldset {
+    border: 0;
+}
+input, textarea, select, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    border-radius: 6px;
+    color: rgb(39, 39, 122);
+    background-color: rgb(237, 235, 250);
+}
+
+.divs {
+    margin-bottom: 1em;
+}
+
+.divs input[type="text"],.divs input[type="password"] ,.divs input[type="email"], .divs select, .divs textarea {
+    padding: 0.2em;
+    border: 2px solid rgb(39, 39, 122);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0,2);
+    display: block;
+}
+.botao:hover {
+    background-color: rgb(137, 122, 187);
+}
+#fil1, #fil2{
+   display: flex;
+}
+.divs input[name="nome"], .divs input[name="login"] {
+    margin-right: 1.2em;
+}
+.divs input[name="prof"] {
+   margin-top: 11px;
+   margin-bottom: 11px;
+}
+
+#eemail {
+    margin-bottom: 30px;
+}
+.divs select {
+    margin-bottom: 30px;
+    margin-top: 11px;
+    font-size:1em;
+}
+#check {
+    margin-bottom: 11px;
+}
+#check input {
+    margin-top: 9px;
+}
+#times, #check {
+    margin-left: 90px;
+}
+button {
+    font-family: sans-serif;
+    background-color: rgb(31, 31, 245);
+    color: rgb(255, 255, 255);
+    width: 110px;
+    height: 32px;
+    font-size: 1.1em;
+    border: 0;
+    letter-spacing: 0.09em;
+    margin-left: 160px;
+    font-weight: lighter;
+    position: absolute;
+}
+.divs select {
+    margin-left: 36px;
+}
+.divs select option{
+    text-align: center;
+}
+.divs .timm, .divs input[name="proff"]{
+    display: flex;
+    margin-right: 10px;
+}
+.conserto{
+    margin-left:81px;
+}
+.conserto .lol {
+    margin-left:-87px;
+}
+#fill{
+    margin-left: 27px;
+}
+#check .conserto2 {
+    margin-left:-6.5px;
+}
+.divs .conserto3 {
+    margin-left: 100px;
+}
+.divs input:focus, .divs select:focus, .divs textarea:focus {
+    background-color: rgb(212, 211, 255);
+}
+.divs input, .divs textarea {
+    font-family: sans-serif;
+    font-weight: 700;
+}
+/*CSS SEM ORGANIZAÇÃO*/

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+        <link rel="stylesheet" type="text/css" href="css/formulario.css" media="screen">
+
+    </head>
+    <body>
+        <div id="titu">
+            <h1 id="titulo">Cadastro times de League of Legends</h1>
+            <p id="subtitulo"><h3>Preencha as informações:</h3></p><br>
+        </div>
+
+        <form>
+            <fieldset class="fields" id="fil1">
+                <div class="divs">
+                    <label for="nome"><strong>Nome:</strong></label><br>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="divs">
+                    <label for="sobrenome"><strong>Sobrenome:</strong></label><br>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset>
+
+            <fieldset class="fields" id="fil2">
+                <div class="divs">
+                    <label for="login"><strong>Login:</strong></label><br>
+                    <input type="text" name="login" id="login" required>
+                </div>
+
+                <div class="divs">
+                    <label for="senha"><strong>Senha:</strong></label><br>
+                    <input type="password" name="senha" id="senha" required>
+                </div>
+            </fieldset>
+
+            <div class="divs" id="eemail">
+                <label for="email"><strong>Email:</strong></label><br>
+                <input type="email" name="email" id="email" required>
+            </div>
+            
+            <div class="divs" id="times">
+                <label for="time" class="timm"><strong>Qual time você gostaria de jogar?</strong></label>
+                <select id="time" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option>CNB e-Sports Club</option>
+                    <option>KaBuM! E-Sports</option>
+                    <option>paiN Gaming</option>
+                    <option>Flamengo Esports</option>
+                    <option>INTZ</option>
+                    <option>Team One Esports</option>
+                </select>
+            </div>
+
+         <div class="conserto">
+            <div class="divs" id="times">
+                <label for="prof" class="lol"><strong>Já atuou em algum time profissional?</strong></label><br>
+                <label>
+                    <input type="radio" name="prof" value="sim">Sim
+                </label>
+                <label>
+                    <input type="radio" name="prof" value="nao">Não
+                </label>
+            </div>
+        </div>
+
+            <fieldset class="fields" id="fill">
+                <div id="check">
+                    <label class="conserto2"><strong>Horário de disponibilidade:</strong></label><br>
+                    <input type="checkbox" id="manha" name="manha" value="Manhã">
+                    <label for="manha">Manhã</label>
+                    <input type="checkbox" id="tarde" name="tarde" value="Tarde">
+                    <label for="tarde">Tarde</label>
+                    <input type="checkbox" id="noite" name="noite" value="Noite">
+                    <label for="noite">Noite</label>
+                </div>
+            </fieldset>
+
+            <div class="divs">
+                <br><label for="exp" class="conserto3"><strong>Conte um pouco sobre você:</strong></label><br><br>
+                <textarea name="exp" id="exp" cols="35" rows="6" style="width: 26em"></textarea>
+            </div>
+
+            <button type="submit" class="botao" onsubmit="">Concluído</button>
+        </form>
+    </body>
+</html>
