@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+html,body{
+    height: 100vh;
+    font-family:Arial, Helvetica, sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+#header ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color:white;
+    list-style-type: none;
+    height: 5.8rem;
+    padding: 2.0rem;
+}
+#secao{
+    width: 100%;
+    height: 100%;
+}
+#logo-img{
+    width: 10.3rem;
+    height:3.0rem;
+    margin-bottom: -4px;
+    margin-left: -6px;
+}
+#pesquisa-img{
+    width:2.77rem;
+    margin-bottom: -2px;
+    margin-right: -3px;
+}
+.div-london-img-article{
+    width: 100%;
+    height: 71.0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#london-img{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+#article{
+    background-color: white;
+    width: 98.8rem;
+    height: 28.7rem;
+    z-index: 1;
+}
+.header-article{
+    width: 100%;
+}
