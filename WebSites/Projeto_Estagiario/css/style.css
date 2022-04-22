@@ -61,4 +61,46 @@ body{
 }
 .header-article{
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 15%;
+    color: white;
+    z-index: 1;
+    font: normal 1.7rem arial, helvetica, sans-serif;
+}
+.divarticle{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-aviao{
+    background-color:rgb(237, 52, 0);
+}
+.img-aviao{
+    width: 15px;
+    height: 15px;
+    margin-right: 9px;
+}
+.div-hotel{
+    background-color:black;
+}
+.img-hotel{
+    width: 15px;
+    height: 15px;
+    margin-right: 9px;
+    background: white;
+}
+.div-carro{
+    background-color: black;
+}
+.img-carro{
+    width: 15px;
+    height: 15px;
+    margin-right: 9px;
+    background: white;
+}
+.label{
+    margin-left: 9px;
 }
