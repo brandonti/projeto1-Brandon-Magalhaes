@@ -1,0 +1,97 @@
+git init    para iniciar
+
+git status    para ver como esta
+
+git add "nome do codigo"   para adicionar ao controle de versao(com aspas)
+
+git add .       coloca todos os arquivos ao controle de versao
+
+git commit -m "commit inicial" {
+caso entre pela primeira vez coloque:
+git config --global user.email "brandon..."
+git push"Brandon Magalhães"
+}
+
+git commit -m "commit inicial"
+
+git push
+
+git remote add origin  coloca aqui o link direto do seu git central
+(serve para definir onde o codigo sera enviado)
+
+git push
+(vai aparecer um link no terminar so copiar e colar para poder logar)
+
+
+ALTERANDO (mudando o arquivo txt de teste)
+git status
+git add .
+git status
+git commit -m "permitir cadastrar usuarios"
+git push    serve pra permitir atualizar
+
+
+VOLTAR A VERSAO DO ARQUIVO
+git reflog   serve para ver o historico
+
+git reset --hard  aqqui vc passa o id que o reflog da
+(ver na pasta central e nao no site)
+
+
+BRANCH
+git branch   para ver quantas branch vc tem
+
+git branch staging   staging é o nome vc pode dar outro(cria uma branch)
+
+git checkout staging    seleciona a branch com o nome dela
+
+git branch
+
+quando usar o GIT PUSH se tiver uma branch nova ele vai dar um link so copiar e colar
+
+
+PASSAR UMA ATUALIZACAO DE BRANCH PARA OUTRA
+esteja selecionado a master com git checkout master
+git pull 
+faz atualizacao do servidor para minha maquina local
+git merge staging   
+vai atualizar o master e colocar o staging
+
+
+git pull
+
+git checkout -b sistema-de-login master
+(sistema de login e so um nome) criar um branch com base na master
+
+
+pull request  é uma soliciatacao de aprovacao
+https://www.youtube.com/watch?v=kB5e-gTAl_s&t=1238s&ab_channel=DevAprender
+
+EXCLUIR
+git branch -d nome da branch aqui
+se n funcionar coloque -D com letra maiuscula
+
+COLOCANDO MASTER PARA A MAIN/ALTERAR NOME DO BRANCH
+git branch -M "nome da branch"
+
+
+CORRIGINDO ERRO
+https://stackoverflow.com/questions/9512549/how-to-fast-forward-a-branch-to-head
+https://github.community/t/nothing-to-commit-working-tree-clean/2594
+https://pt.stackoverflow.com/questions/372937/erro-na-hora-de-realizar-um-push-para-o-github
+git branch -d <branch>
+
+FALTA SO O IGNORE
+
+
+SAINDO DA CONTA GIT
+https://sobrelinux.info/questions/283763/how-to-switch-git-user-at-terminal
+
+MUDANDO PRA MAIN E COLOCANDO NO GITHUB
+git remote add origin  coloca aqui o link direto do seu git central
+git pull origin main
+git checkout -b main (criar uma branch e ja abre nela)
+git status
+git add .
+git commit -m ""
+git push origin main
